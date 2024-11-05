@@ -1,0 +1,28 @@
+<%- include Partials/header.ejs %>
+<%- include Partials/main_nav.ejs %>
+
+  <!--Main Content-->
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <% if(title=="Home") { %>
+          <% include Partials/index.ejs%>
+          <% } %>
+
+          <% if(title=="About") { %>
+            <% include Partials/aboutme.ejs%>
+            <% } %>
+
+            <% if(title=="Projects") { %>
+              <% include Partials/projects.ejs%>
+              <% } %>
+              
+              <% if(title=="Contact") { %>
+                <% include Partials/contact.ejs%>
+                <% } %>
+      </div>
+    </div>
+  </main>
+
+<%- include Partials/bottom_nav.ejs %>
+<%- include Partials/footer.ejs %>
